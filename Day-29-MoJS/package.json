@@ -14,7 +14,7 @@
   "dependencies": {
     "mo-js": "^0.265.9",
     "mojs-player": "^0.43.15",
-    "sass-brunch": "^2.7.0"
+    "sass-brunch": "^3.0.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
