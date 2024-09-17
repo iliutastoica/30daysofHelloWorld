@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "co-body": "^4.2.0",
+    "co-body": "^5.0.0",
     "co-views": "^2.1.0",
     "koa": "^1.2.4",
     "koa-route": "^2.4.2",
     "koa-static": "^2.0.0",
     "path": "^0.12.7",
-    "swig": "^1.4.2"
-  }
+    "swig": "^1.4.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
