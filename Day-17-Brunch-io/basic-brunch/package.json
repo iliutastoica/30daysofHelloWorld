@@ -9,10 +9,13 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "prod": "brunch build --production"
+    "prod": "brunch build --production",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "sass-brunch": "^2.7.0"
+    "sass-brunch": "^2.7.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
@@ -23,5 +26,6 @@
     "css-brunch": "^2.0.0",
     "javascript-brunch": "^2.0.0",
     "uglify-js-brunch": "^2.0.0"
-  }
+  },
+  "snyk": true
 }
